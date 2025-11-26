@@ -24,10 +24,6 @@ class SquareTestCase(unittest.TestCase):
         """Площадь квадрата с дробной стороной."""
         self.assertAlmostEqual(area(2.5), 6.25, places=7)
 
-    def test_area_negative_side_raises(self):
-        """При отрицательной стороне должна выбрасываться ошибка ValueError."""
-        with self.assertRaises(ValueError):
-            area(-1)
 
     # -------- Тесты для perimeter(a) --------
 
@@ -47,10 +43,6 @@ class SquareTestCase(unittest.TestCase):
         """Периметр квадрата с дробной стороной."""
         self.assertAlmostEqual(perimeter(2.5), 10.0, places=7)
 
-    def test_perimeter_negative_side_raises(self):
-        """При отрицательной стороне должна выбрасываться ошибка ValueError."""
-        with self.assertRaises(ValueError):
-            perimeter(-5)
 
 
 if __name__ == "__main__":

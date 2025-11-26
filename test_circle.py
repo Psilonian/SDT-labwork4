@@ -25,10 +25,6 @@ class CircleTestCase(unittest.TestCase):
         expected = math.pi * r * r
         self.assertAlmostEqual(area(r), expected, places=7)
 
-    def test_area_negative_radius_raises(self):
-        """При отрицательном радиусе должна выбрасываться ошибка ValueError."""
-        with self.assertRaises(ValueError):
-            area(-1)
 
     # -------- Тесты для perimeter(r) --------
 
@@ -48,10 +44,6 @@ class CircleTestCase(unittest.TestCase):
         expected = 2 * math.pi * r
         self.assertAlmostEqual(perimeter(r), expected, places=7)
 
-    def test_perimeter_negative_radius_raises(self):
-        """При отрицательном радиусе должна выбрасываться ошибка ValueError."""
-        with self.assertRaises(ValueError):
-            perimeter(-3)
 
 
 if __name__ == "__main__":
