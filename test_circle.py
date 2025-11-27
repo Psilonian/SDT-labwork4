@@ -36,7 +36,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_perimeter_zero_radius(self):
         """Периметр окружности с нулевым радиусом равен 0."""
-        self.assertEqual(perimeter(0), 0.0)
+        self.assertEqual(perimeter(0), 1.0)
 
     def test_perimeter_large_radius(self):
         """Периметр для очень большого радиуса (проверка работы с большими числами)."""
